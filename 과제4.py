@@ -5,6 +5,7 @@ print('데이터를 입력하세요(입력을 마치려면 0을 입력하세요)
 while 1:
     inputNum = int(input())
     if inputNum:
+        # 입력값이 0이 아닌경우 값을 리스트에 추가(append)
         inputList.append(inputNum)
         count += 1
     else:
