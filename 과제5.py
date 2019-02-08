@@ -7,12 +7,14 @@ while 1:
         continue
 
     '''
-    시작 단과 끝 단의 각 입력값 사이 차가 3 이하라는 문제의 제시 조건을 만족하기 위한 if문
+    시작 단과 끝 단의 각 입력값 사이 차가 4 이하라는 문제의 제시 조건을 만족하기 위한 if문
     각 입력값 사이 차 크기에 따라 출력시의 간격 크기를 지정
     '''
-    if (stop - start) > 3:
+    if (stop - start) > 4:
         print('시작 단과 끝 단 사이의 차가 3 이하가 되어야 합니다. 다시 입력해주세요.')
         continue
+    elif (stop - start) == 4:
+        endStr = '  '
     elif (stop - start) == 3:
         endStr = '    '
     elif (stop - start) == 2:
